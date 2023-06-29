@@ -5,6 +5,29 @@ from selenium import webdriver
 
 
 
+url = "https://twitter.com"
+
+
+try:
+    # Отправляем запрос
+    response = requests.get(url)
+    print(response.status_code)
+    # if response.status_code == 200:
+    #     is_ok = True
+    # else:
+    #     is_ok = False
+    # content = response.json()
+    # data = pd.DataFrame(content)
+
+except Exception as ex:
+    print(ex)
+    print('Следует поменять X_Csrf_Token и X_Guest_Token')
+print('fin fin fin')
+
+
+while True:
+    pass
+
 
 # Не использовал проксирования тк денег нет 
 
